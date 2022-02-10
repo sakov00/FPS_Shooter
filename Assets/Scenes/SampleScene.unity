@@ -136,8 +136,8 @@ GameObject:
   - component: {fileID: 448680901}
   - component: {fileID: 448680900}
   - component: {fileID: 448680899}
-  - component: {fileID: 448680898}
   - component: {fileID: 448680904}
+  - component: {fileID: 448680898}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 448680897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5edf9d0b7c72974089a35941e1fe7be, type: 3}
+  m_Script: {fileID: 11500000, guid: 446e776222320f74bb2d6a0811a44b9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!143 &448680899
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 448680897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 343184f6f809afe40b87c99ed3258203, type: 3}
+  m_Script: {fileID: 11500000, guid: c6b2e1400a13aa849b7276bf1807fa5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivityHor: 6
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 875304261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd4e54325015d924abe04976142325e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 95860a64d5c92b448b4fd20e4f419184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &963194225
@@ -495,8 +495,8 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -578,7 +578,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e4f1bf651559eb44a12390fda6e7036, type: 3}
+  m_Script: {fileID: 11500000, guid: c700048e40df44648a1b74bf218d06d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &963194230
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba15458eb71ea564f922c25d09ec6fbe, type: 3}
+  m_Script: {fileID: 11500000, guid: c46bc625654ec544dad6f97e9b78498f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1006340213
@@ -620,7 +620,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1006340213}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 5af65ea9f4deedf4ab4a2d2f52e3ec47, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 8f0e7bc6a561b3c42835ce3b63a585d4, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1006340215
 Terrain:
@@ -631,7 +631,7 @@ Terrain:
   m_GameObject: {fileID: 1006340213}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 5af65ea9f4deedf4ab4a2d2f52e3ec47, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 8f0e7bc6a561b3c42835ce3b63a585d4, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5

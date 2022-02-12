@@ -6,14 +6,14 @@ public class EnemySolder : Enemy
 {
     private Rigidbody _rBody;
 
-    void Start()
+    private void Start()
     {
         _rBody = GetComponent<Rigidbody>();
         HPEnemy = 100;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
     }
 
@@ -25,13 +25,14 @@ public class EnemySolder : Enemy
             var pushDirection = Vector3.Normalize(pushFrom - player.transform.position);
             _rBody.AddForce(pushDirection * 500);
             yield return new WaitForSeconds(10);
-            Destroy(gameObject);
+            if(this != null)
+                Destroy(gameObject);
         }
     }
 
     internal override void AttackToPlayer()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("shoot to player");
     }
 
     internal override void SpecAttackToPlayer()

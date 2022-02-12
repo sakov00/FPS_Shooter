@@ -20,8 +20,7 @@ public class Gunshot : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                GameObject hitObject = hit.transform.gameObject;
-                EnemySolder target = hitObject.GetComponent<EnemySolder>();
+                EnemySolder target = hit.transform.gameObject.GetComponent<EnemySolder>();
                 if (target != null)
                 {
                     StartCoroutine(target.ReactToHit(hit.point, gameObject));

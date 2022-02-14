@@ -17,6 +17,16 @@ public class EnemySolder : Enemy
     {
     }
 
+    internal void Hide_Behind_Cover()
+    {
+        transform.localScale= Vector3.one;
+    }
+
+    internal void Unhide_Behind_Cover()
+    {
+        transform.localScale = new Vector3(1,2,1);
+    }
+
     internal override IEnumerator ReactToHit(Vector3 pushFrom, GameObject player)
     {
         HPEnemy -= 20;
@@ -30,7 +40,12 @@ public class EnemySolder : Enemy
         }
     }
 
-    internal override void AttackToPlayer()
+    internal override void LongRangeAttackToPlayer()
+    {
+        Debug.Log("shoot to player");
+    }
+
+    internal override void MeleeAttackToPlayer()
     {
         Debug.Log("shoot to player");
     }

@@ -11,8 +11,11 @@ namespace Assets.Scripts.Enemies
     public abstract class Enemy : MonoBehaviour
     {
         public int HPEnemy { get; set; }
+        public int Speed { get; set; }
 
-        internal abstract void AttackToPlayer();
+        internal abstract void LongRangeAttackToPlayer();
+
+        internal abstract void MeleeAttackToPlayer();
 
         internal abstract void SpecAttackToPlayer();
 

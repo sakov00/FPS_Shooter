@@ -1,29 +1,25 @@
-﻿using System;
+﻿using Assets.Scripts.Interfaces;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts.Enemies
 {
-    public abstract class Enemy : MonoBehaviour
+    public abstract class Enemy : MonoBehaviour, IAttack
     {
         public int HPEnemy { get; set; }
         public int Speed { get; set; }
 
-        internal abstract void LongRangeAttackToPlayer();
+        public abstract void LongRangeAttackToPlayer();
 
-        internal abstract void MeleeAttackToPlayer();
+        public abstract void MeleeAttackToPlayer();
 
-        internal abstract void SpecAttackToPlayer();
+        public abstract void SpecAttackToPlayer();
 
-        internal abstract void Move();
+        public abstract void Move();
 
-        internal abstract void Jump();
+        public abstract void Jump();
 
-        internal abstract IEnumerator ReactToHit(Vector3 pushFrom, GameObject player);
+        public abstract IEnumerator ReactToHit(Vector3 pushFrom, GameObject player);
 
     }
 }

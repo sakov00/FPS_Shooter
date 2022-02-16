@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
@@ -13,16 +11,11 @@ public class PlayerCamera : MonoBehaviour
     private float _rotationX = 0;
     private float _rotationY = 0;
 
-    void Start()
-    {
-    }
-
-    void Update()
+    private void Update()
     {
         _rotationX -= Input.GetAxis("Mouse Y") * sensitivityVert;
         _rotationX = Mathf.Clamp(_rotationX, minimumVert, maximumVert);
-        _rotationY = Input.GetAxis("Mouse X") * sensitivityHor;
-        _rotationY = transform.localEulerAngles.y + _rotationY;
+        _rotationY += Input.GetAxis("Mouse X") * sensitivityHor;
         transform.localEulerAngles = new Vector3(_rotationX, _rotationY, 0);
     }
 }

@@ -1,17 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerUI : MonoBehaviour
+public class CameraUI : MonoBehaviour
 {
     Camera _camera;
-    void Start()
+    private void Start()
     {
         _camera = GetComponent<Camera>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-    void OnGUI()
+
+    private void OnGUI()
     {
         int size = 15;
         float posX = _camera.pixelWidth / 2 - size / 4;

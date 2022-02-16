@@ -56,15 +56,17 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Player\GeneralPlayer.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemySolder\AIForEnemySolder.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerUI.cs" />
+    <Compile Include="Assets\Scripts\Player\CameraUI.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemySolder\EnemySolder.cs" />
-    <Compile Include="Assets\Scripts\GeneralFunctions.cs" />
-    <Compile Include="Assets\Scripts\Player\Gunshot.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerCamera.cs" />
     <Compile Include="Assets\GameMenu\ScriptsMenu\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\GeneralFunctions.cs" />
+    <Compile Include="Assets\Scripts\Player\MovePlayer.cs" />
+    <Compile Include="Assets\Scripts\Player\GunShoot.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerCamera.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IAttack.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

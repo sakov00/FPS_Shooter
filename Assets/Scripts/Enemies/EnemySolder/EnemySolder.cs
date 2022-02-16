@@ -10,6 +10,7 @@ public class EnemySolder : Enemy
     {
         _rBody = GetComponent<Rigidbody>();
         HPEnemy = 100;
+        Speed = 5;
     }
 
     // Update is called once per frame
@@ -17,17 +18,17 @@ public class EnemySolder : Enemy
     {
     }
 
-    internal void Hide_Behind_Cover()
+    public void Hide_Behind_Cover()
     {
         transform.localScale= Vector3.one;
     }
 
-    internal void Unhide_Behind_Cover()
+    public void Unhide_Behind_Cover()
     {
         transform.localScale = new Vector3(1,2,1);
     }
 
-    internal override IEnumerator ReactToHit(Vector3 pushFrom, GameObject player)
+    public override IEnumerator ReactToHit(Vector3 pushFrom, GameObject player)
     {
         HPEnemy -= 20;
         if (HPEnemy <= 0)
@@ -40,27 +41,27 @@ public class EnemySolder : Enemy
         }
     }
 
-    internal override void LongRangeAttackToPlayer()
+    public override void LongRangeAttackToPlayer()
     {
         Debug.Log("shoot to player");
     }
 
-    internal override void MeleeAttackToPlayer()
+    public override void MeleeAttackToPlayer()
     {
         Debug.Log("shoot to player");
     }
 
-    internal override void SpecAttackToPlayer()
+    public override void SpecAttackToPlayer()
     {
         throw new System.NotImplementedException();
     }
 
-    internal override void Move()
+    public override void Move()
     {
         throw new System.NotImplementedException();
     }
 
-    internal override void Jump()
+    public override void Jump()
     {
         throw new System.NotImplementedException();
     }

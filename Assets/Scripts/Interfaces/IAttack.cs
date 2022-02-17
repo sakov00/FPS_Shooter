@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Assets.Scripts.Interfaces
 {
     public interface IAttack
     {
 
-        void LongRangeAttackToPlayer();
+        void LongRangeAttack(RaycastHit hit, int damage);
 
-        void MeleeAttackToPlayer();
+        void MeleeAttack(RaycastHit hit, int damage);
 
-        void SpecAttackToPlayer();
+        void SpecAttack(RaycastHit hit, int damage);
     }
 }

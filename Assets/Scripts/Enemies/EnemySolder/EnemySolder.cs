@@ -28,30 +28,31 @@ public class EnemySolder : Enemy
         transform.localScale = new Vector3(1,2,1);
     }
 
-    public override IEnumerator ReactToHit(Vector3 pushFrom, GameObject player)
+    public override void ReactToHit(RaycastHit hit, int damage)
     {
-        HPEnemy -= 20;
+        HPEnemy -= damage;
         if (HPEnemy <= 0)
         {
-            var pushDirection = Vector3.Normalize(pushFrom - player.transform.position);
+            var pushDirection = Vector3.Normalize(hit.point - gameObject.transform.position);
             _rBody.AddForce(pushDirection * 500);
-            yield return new WaitForSeconds(10);
-            if(this != null)
+            if(gameObject != null)
                 Destroy(gameObject);
         }
     }
 
-    public override void LongRangeAttackToPlayer()
+    public override void LongRangeAttack(RaycastHit hit, int damage)
+    {
+        Debug.Log("shoot to player");
+        GeneralPlayer player = hit.transform?.gameObject?.GetComponent<GeneralPlayer>();
+        player.ReactToHit(hit, damage);
+    }
+
+    public override void MeleeAttack(RaycastHit hit, int damage)
     {
         Debug.Log("shoot to player");
     }
 
-    public override void MeleeAttackToPlayer()
-    {
-        Debug.Log("shoot to player");
-    }
-
-    public override void SpecAttackToPlayer()
+    public override void SpecAttack(RaycastHit hit, int damage)
     {
         throw new System.NotImplementedException();
     }

@@ -4,22 +4,22 @@ using UnityEngine;
 
 namespace Assets.Scripts.Enemies
 {
-    public abstract class Enemy : MonoBehaviour, IAttack
+    public abstract class Enemy : MonoBehaviour, IAttack, IReactionToHit
     {
         public int HPEnemy { get; set; }
         public int Speed { get; set; }
 
-        public abstract void LongRangeAttackToPlayer();
+        public abstract void LongRangeAttack(RaycastHit hit, int damage);
 
-        public abstract void MeleeAttackToPlayer();
+        public abstract void MeleeAttack(RaycastHit hit, int damage);
 
-        public abstract void SpecAttackToPlayer();
+        public abstract void SpecAttack(RaycastHit hit, int damage);
 
         public abstract void Move();
 
         public abstract void Jump();
 
-        public abstract IEnumerator ReactToHit(Vector3 pushFrom, GameObject player);
+        public abstract void ReactToHit(RaycastHit hit, int damage);
 
     }
 }

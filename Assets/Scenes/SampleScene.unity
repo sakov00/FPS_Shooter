@@ -212,8 +212,9 @@ GameObject:
   - component: {fileID: 448680901}
   - component: {fileID: 448680900}
   - component: {fileID: 448680899}
-  - component: {fileID: 448680904}
   - component: {fileID: 448680898}
+  - component: {fileID: 448680904}
+  - component: {fileID: 448680905}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -342,6 +343,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivityHor: 6
   sensitivityVert: 6
+--- !u!114 &448680905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448680897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22138a73dcf16f64fb3390f8c4ea6290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &692680173
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +857,6 @@ GameObject:
   - component: {fileID: 875304263}
   - component: {fileID: 875304262}
   - component: {fileID: 875304267}
-  - component: {fileID: 875304268}
   m_Layer: 0
   m_Name: EnemySolder
   m_TagString: Untagged
@@ -954,18 +966,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95860a64d5c92b448b4fd20e4f419184, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &875304268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875304261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce4f83d53e49fbe46a5df5c944364118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &963194225

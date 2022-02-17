@@ -46,7 +46,7 @@ public class AIForEnemySolder : MonoBehaviour
             if (find_player != null)
             {
                 hidfromplayer = true;
-                enemy_solder.MeleeAttackToPlayer();
+                enemy_solder.LongRangeAttack(hit, 10);
                 need_radian = radian;
                 break;
             }
